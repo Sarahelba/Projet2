@@ -1,0 +1,300 @@
+/*-------------------------------------------HEADER-------------------------------*/
+
+.reservia {
+  width: 70px;
+}
+
+/*----------Barre de recherche-------------*/
+
+form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+}
+
+#loc {
+  background-color: #f2f2f2;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  width: 150px;
+  height: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+}
+
+/*------------------NAV AVEC ROND---------------------------*/
+
+nav li {
+  list-style-type: none;
+  display: flex;
+}
+
+.icone {
+  background-color: #deebff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav2 a {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid;
+  border-left: 0px;
+}
+
+i {
+  color: blue;
+}
+/*-------------------------------------*/
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.act {
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0065fc;
+  font-weight: bolder;
+  font-size: 12px;
+  margin: 15px;
+}
+
+header img {
+  width: 7%;
+}
+
+h2 {
+  font-size: 15px;
+  color: black;
+  font-weight: bolder;
+}
+header p {
+  font-size: 12px;
+  margin: 10px;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+#gros {
+  display: flex;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#hebergement {
+  background-color: #f2f2f2;
+  width: 70%;
+  height: 450px;
+  border-radius: 10px;
+  margin: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#hebergement > * {
+  margin: 0;
+}
+#firstblock {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#firstblock img {
+  width: 100%;
+  height: 80px; /*Pas besoin de mettre en pourcentage*/
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+#firstblock figure {
+  background-color: white;
+  border-radius: 10px;
+  width: 180px;
+  height: 140px;
+  max-height: 50%;
+  padding: 5px;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+/*----------------------------------------POPULAIRES---------------------------------*/
+#secondblock {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#populaire {
+  width: 30%;
+  height: 450px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#populaire img {
+  width: 90px;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+}
+
+#populaire figure {
+  background-color: white;
+  border-radius: 10px;
+  width: 70%;
+  height: 100px;
+  padding: 5px;
+  display: flex;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+/*--------------------------------ACTIVITES---------------------------------------------------------*/
+#act {
+  width: 100%;
+}
+
+#activite {
+  display: flex;
+}
+/*--------1er type -----------------*/
+.vp {
+  background-color: white;
+  border-radius: 10px;
+  width: 350px;
+  height: 500px;
+  box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.vp img {
+  width: 350px;
+  height: 425px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+/*-------2eme type------------*/
+.fp {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  height: 225px;
+  box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.fp img {
+  width: 300px;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+/*--------3eme type-----------*/
+.if {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  height: 180px;
+  box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.if img {
+  width: 300px;
+  height: 130px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+/*--------------------------------------------FOOTER----------------------------------*/
+
+footer {
+  background-color: #f2f2f2;
+  display: flex;
+  padding: 5px;
+  font-size: 20px;
+  margin: 0px;
+}
+
+footer div {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+}
+
+div p {
+  line-height: 2px;
+}
+
+/*--------------------css des étoiles *--------------------------------------------*/
+
+.fa-star {
+  color: gray;
+  cursor: pointer;
+  padding: 0.0625rem;
+}
+
+.fa-star.gold {
+  color: #0065fc;
+}
+
+/* Le groupe '.stars' positionne les étoiles
+		 les unes à côté des autres sans espacements. */
+.stars {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.stars:hover .fa-star {
+  color: #0065fc;
+}
+/* Et si la souris survole une étoile en particulier,
+		 on sélectionne toutes les étoiles qui sont APRÈS celle-ci
+		 grâce à l'opérateur '~' et on les force en GRIS */
+.stars .fa-star:hover ~ .fa-star {
+  color: gray;
+}
+/*----------------------------------------------------------------------------------*/
