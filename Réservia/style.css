@@ -1,16 +1,22 @@
 /*-------------------------------------------HEADER-------------------------------*/
-
-.reservia {
-  width: 70px;
+header {
+  margin: 2em;
 }
 
 /*----------Barre de recherche-------------*/
+.navbarlogo {
+  position: absolute;
+  left: 0;
+  margin: 3em;
+  width: 20px;
+}
 
 form {
   width: 100%;
   position: relative;
   display: flex;
   border-radius: 10px;
+  padding-top: 1em;
 }
 
 #loc {
@@ -24,22 +30,25 @@ form {
   border-bottom-left-radius: 10px;
 }
 
+#loc i {
+  color: black;
+}
+
 input[type="submit"] {
-  background-color: blue;
+  background-color: #0065fc;
   color: white;
-  width: 150px;
+  width: 89px;
   height: 30px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 input[type="text"] {
-  width: 200px;
+  width: 180px;
   height: 30px;
 }
 
 /*------------------NAV AVEC ROND---------------------------*/
-
 nav li {
   list-style-type: none;
   display: flex;
@@ -53,6 +62,7 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateX(15px);
 }
 
 .nav2 a {
@@ -60,16 +70,29 @@ nav li {
   border-bottom-right-radius: 10px;
   border: solid;
   border-left: 0px;
+  padding: 6px;
+  border-width: ;
 }
 
 i {
   color: blue;
 }
+
+.nav2 {
+  display: flex;
+  padding-top: 1em;
+}
+
+.filtre {
+  position: absolute;
+  left: 0;
+  margin 2em;}
 /*-------------------------------------*/
 nav ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  font-weight: lighter;
 }
 
 .act {
@@ -85,33 +108,38 @@ nav a {
 }
 
 header img {
-  width: 7%;
+  width: 6em;
 }
 
 h2 {
   font-size: 15px;
   color: black;
-  font-weight: bolder;
+  padding: 6px;
 }
+
 header p {
   font-size: 12px;
-  margin: 10px;
 }
 
+header h2 {
+  padding-top: 34px;
+  font-weight: bold;
+}
 /*-------------------------------------------------------------------------------*/
-
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   font-size: 10px;
 }
 
+body {
+  margin: 2em;
+}
 #gros {
   display: flex;
 }
 
 /*------------------------------------------------------------------------------*/
-
 #hebergement {
   background-color: #f2f2f2;
   width: 70%;
@@ -127,6 +155,7 @@ header p {
 #hebergement > * {
   margin: 0;
 }
+
 #firstblock {
   display: flex;
   flex-wrap: wrap;
@@ -134,7 +163,8 @@ header p {
 
 #firstblock img {
   width: 100%;
-  height: 80px; /*Pas besoin de mettre en pourcentage*/
+  height: 80px;
+  /*Pas besoin de mettre en pourcentage*/
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: cover;
@@ -143,7 +173,7 @@ header p {
 #firstblock figure {
   background-color: white;
   border-radius: 10px;
-  width: 180px;
+  width: 210px;
   height: 140px;
   max-height: 50%;
   padding: 5px;
@@ -151,6 +181,15 @@ header p {
   margin-inline-end: 10px;
   margin-block-start: 1em;
   margin-block-end: 1em;
+}
+
+.afficher {
+  padding-top: 2em;
+  font-weight: BOLD;
+  font-size: 12px;
+  padding-left: 13PX;
+    font-size: 12px;
+ 
 }
 
 /*----------------------------------------POPULAIRES---------------------------------*/
@@ -187,16 +226,29 @@ header p {
 .description {
   display: flex;
   flex-direction: column;
+  margin-left: 1em;
+  margin-top: 4px;
 }
 
+#populaire h2 {
+  margin-left: 2.5em;
+  margin-top: 2em;
+  font-weight: bold
+}
+
+.fa-chart-line{
+  color: black;
+  width: 70px;
+}
 /*--------------------------------ACTIVITES---------------------------------------------------------*/
 #act {
-  width: 100%;
+  width: 90vw;
 }
 
 #activite {
   display: flex;
 }
+
 /*--------1er type -----------------*/
 .vp {
   background-color: white;
@@ -247,8 +299,8 @@ header p {
   border-top-right-radius: 10px;
   object-fit: cover;
 }
-/*--------------------------------------------FOOTER----------------------------------*/
 
+/*--------------------------------------------FOOTER----------------------------------*/
 footer {
   background-color: #f2f2f2;
   display: flex;
@@ -269,7 +321,6 @@ div p {
 }
 
 /*--------------------css des étoiles *--------------------------------------------*/
-
 .fa-star {
   color: gray;
   cursor: pointer;
@@ -280,8 +331,7 @@ div p {
   color: #0065fc;
 }
 
-/* Le groupe '.stars' positionne les étoiles
-		 les unes à côté des autres sans espacements. */
+/* Le groupe '.stars' positionne les étoilesles unes à côté des autres sans espacements. */
 .stars {
   display: inline-flex;
   justify-content: center;
@@ -291,10 +341,14 @@ div p {
 .stars:hover .fa-star {
   color: #0065fc;
 }
-/* Et si la souris survole une étoile en particulier,
-		 on sélectionne toutes les étoiles qui sont APRÈS celle-ci
-		 grâce à l'opérateur '~' et on les force en GRIS */
+
+/* Et si la souris survole une étoile en particulier,on sélectionne toutes les étoiles qui sont APRÈS celle-cigrâce à l'opérateur '~' et on les force en GRIS */
 .stars .fa-star:hover ~ .fa-star {
   color: gray;
 }
+
+#secondblock .rating{
+  margin-top: 28px;
+}
+
 /*----------------------------------------------------------------------------------*/
