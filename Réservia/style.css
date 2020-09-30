@@ -1,3 +1,33 @@
+/*--------------MEDIA  QUERIES--------------------------*/
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 400px) and (max-width: 768px) {
+  /*-------HEBERGEMENT------*/
+
+  #gros {
+    flex-direction: column-reverse;
+  }
+
+  /*-------POPULAIRE-------*/
+
+  /*-----ACTIVITE------*/
+  #activite {
+    flex-direction: column;
+  }
+
+  /*--------FOOTER---------*/
+  footer {
+    flex-direction: column;
+  }
+
+  #propos {
+    margin-bottom: -18px;
+  }
+
+  #assistance {
+    margin-left: 0;
+  }
+}
+
 /*-------------------------------------------HEADER-------------------------------*/
 header {
   margin: 2em;
@@ -21,7 +51,7 @@ form {
 
 #loc {
   background-color: #f2f2f2;
-  width: 30px;
+  width: 40px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -41,33 +71,45 @@ input[type="submit"] {
   height: 30px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border: transparent;
 }
 
 input[type="text"] {
   width: 180px;
   height: 30px;
+  border: transparent;
 }
 
+.bande {
+  border-top: solid;
+  border-color: blue;
+  padding-top: 16px;
+  margin-top: -20px;
+}
 /*------------------NAV AVEC ROND---------------------------*/
+
 nav li {
   list-style-type: none;
   display: flex;
+  margin-left: 10px;
 }
 
 .icone {
   background-color: #deebff;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateX(15px);
+  position: absolute;
+  margin-left: -7px;
+  margin-top: 5px;
 }
 
 .nav2 a {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 19px;
   border: solid;
   border-left: 0px;
   padding: 8px;
@@ -75,6 +117,9 @@ nav li {
   margin-top: 5px;
   margin-left: 8px;
   border-color: #f2f2f2;
+  padding-left: 40px;
+  border-width: 1px;
+  font-size: 12px;
 }
 
 i {
@@ -109,23 +154,25 @@ nav a {
   text-decoration: none;
   color: #0065fc;
   font-weight: bolder;
-  font-size: 12px;
+  font-size: 14px;
   margin: 15px;
 }
 
 header img {
-  width: 6em;
+  width: 10em;
+  margin-top: -36px;
 }
 
-h2 {
-  font-size: 15px;
+h2 a {
+  font-size: 16px;
   color: black;
   padding: 6px;
   margin-left: 0.6em;
+  text-decoration: none;
 }
 
 header p {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 header h2 {
@@ -133,6 +180,7 @@ header h2 {
   font-weight: bold;
   margin-left: -7px;
   padding-bottom: 1px;
+  font-size: 17px;
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -150,11 +198,14 @@ body {
   display: flex;
 }
 
+figcaption {
+  font-weight: bold;
+  font-size: 12px;
+}
 /*------------------------------------------------------------------------------*/
 #hebergement {
   background-color: #f2f2f2;
   width: 70%;
-  height: 450px;
   border-radius: 10px;
   margin: 20px;
   padding-left: 5%;
@@ -174,7 +225,7 @@ body {
 
 #firstblock img {
   width: 100%;
-  height: 80px;
+  height: 109px;
   /*Pas besoin de mettre en pourcentage*/
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -184,8 +235,8 @@ body {
 #firstblock figure {
   background-color: white;
   border-radius: 10px;
-  width: 210px;
-  height: 140px;
+  width: 274px;
+  height: 180px;
   max-height: 50%;
   padding: 5px;
   margin-inline-start: 10px;
@@ -197,8 +248,18 @@ body {
 .afficher {
   padding-top: 2em;
   font-weight: BOLD;
-  font-size: 12px;
+  font-size: 14px;
   padding-left: 13px;
+}
+
+.filtre li {
+  font-weight: bold;
+  margin-top: -9px;
+  margin-left: 2em;
+  font-size: 12px;
+}
+
+figure p {
   font-size: 12px;
 }
 
@@ -208,16 +269,19 @@ body {
   flex-wrap: wrap;
 }
 
+#secondblock {
+  font-size: 13px;
+}
+
 #populaire {
   width: 30%;
-  height: 450px;
   background-color: #f2f2f2;
   border-radius: 10px;
   margin: 20px;
 }
 
 #populaire img {
-  width: 90px;
+  width: 128px;
   height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -227,8 +291,8 @@ body {
 #populaire figure {
   background-color: white;
   border-radius: 10px;
-  width: 70%;
-  height: 100px;
+  width: 85%;
+  height: 120px;
   padding: 5px;
   display: flex;
 }
@@ -249,6 +313,7 @@ body {
 .fa-chart-line {
   color: black;
   width: 70px;
+  float: right;
 }
 
 /*--------------------------------ACTIVITES---------------------------------------------------------*/
@@ -260,7 +325,6 @@ body {
 #activite {
   display: flex;
   margin: -3em;
-  height: 602px;
   margin-top: 1em;
 }
 
@@ -284,7 +348,7 @@ body {
 }
 
 .vp img {
-  width: 350px;
+  width: 340px;
   height: 425px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -332,7 +396,8 @@ footer {
   background-color: #f2f2f2;
   display: flex;
   padding: 5px;
-  margin: 0px;
+  margin: -22px;
+  margin-top: 30px;
 }
 
 footer div {
@@ -355,14 +420,17 @@ footer h1 {
 }
 
 #propos {
-  margin-right: 1em;
+  margin-right: 25em;
 }
 
 #assistance {
-  margin-left: 6em;
+  margin-left: 25em;
+}
+/*--------------------css des étoiles *--------------------------------------------*/
+.rating {
+  width: 214px;
 }
 
-/*--------------------css des étoiles *--------------------------------------------*/
 .fa-star {
   color: gray;
   cursor: pointer;
@@ -390,7 +458,92 @@ footer h1 {
 }
 
 #secondblock .rating {
-  margin-top: 28px;
+  margin-top: 47px;
+}
+/*----------------------------------------------------------------------------------*/
+
+.fas fa-chart-line {
+  width: 100px;
 }
 
-/*----------------------------------------------------------------------------------*/
+.nav2 li:hover {
+  background-color: #f2f2f2;
+}
+
+/*--------------MEDIA  QUERIES--------------------------*/
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 400px) and (max-width: 768px) {
+  /*--------HEADER---------*/
+
+  .nav2 a {
+    border-radius: 19px;
+    border: solid;
+    border-left: 0px;
+    padding: 8px;
+    border-width: 2px;
+    margin-top: 5px;
+    margin-left: 8px;
+    border-color: #f2f2f2;
+    padding-left: 38px;
+    border-width: 1px;
+    font-size: 12px;
+    padding-right: 14px;
+  }
+
+  /*-------HEBERGEMENT------*/
+
+  #gros {
+    flex-direction: column-reverse;
+  }
+
+  #hebergement {
+    background-color: white;
+  }
+
+  #firstblock figure {
+    box-shadow: 5px 5px 5px #f2f2f2;
+    width: 100%;
+    height: 210px;
+  }
+
+  /*-------POPULAIRE-------*/
+  #populaire {
+    width: 100%;
+
+    border-radius: 0;
+    margin: 0;
+  }
+  /*-----ACTIVITE------*/
+  #activite {
+    flex-direction: column;
+  }
+
+  #activite figure {
+    width: 85%;
+    height: 250px;
+  }
+
+  #activite img {
+    width: 100%;
+    height: 165px;
+
+    object-fit: cover;
+  }
+
+  #act figcaption {
+    font-size: 16px;
+
+  /*--------FOOTER---------*/
+  footer {
+    flex-direction: column;
+  }
+
+  #propos {
+    margin-bottom: -18px;
+  }
+
+  #assistance {
+    margin-left: 4em;
+    margin-top: -2em;
+  }
+}
