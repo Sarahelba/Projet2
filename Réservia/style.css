@@ -472,7 +472,7 @@ footer h1 {
 
 /*--------------MEDIA  QUERIES--------------------------*/
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width: 400px) and (max-width: 768px) {
+@media all and (min-width: 400px) and (max-width: 1024px) {
   /*--------HEADER---------*/
 
   .nav2 a {
