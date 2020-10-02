@@ -19,13 +19,7 @@
     flex-direction: column;
   }
 
-  #propos {
-    margin-bottom: -18px;
-  }
-
-  #assistance {
-    margin-left: 0;
-  }
+ 
 }
 
 /*-------------------------------------------HEADER-------------------------------*/
@@ -308,6 +302,7 @@ figure p {
   margin-left: 2.5em;
   margin-top: 2em;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .fa-chart-line {
@@ -404,7 +399,7 @@ footer div {
   margin: 40px;
   display: flex;
   flex-direction: column;
-  padding-right: 100px;
+  padding-right: 180px;
 }
 
 div p {
@@ -419,13 +414,7 @@ footer h1 {
   font-size: 13px;
 }
 
-#propos {
-  margin-right: 25em;
-}
 
-#assistance {
-  margin-left: 25em;
-}
 /*--------------------css des étoiles *--------------------------------------------*/
 .rating {
   width: 214px;
@@ -498,12 +487,24 @@ footer h1 {
 
   #hebergement {
     background-color: white;
+    width: 100%;
   }
 
+  #hebergement img{
+    
+    width: 100%;
+    object-fit: cover;
+  }
   #firstblock figure {
     box-shadow: 5px 5px 5px #f2f2f2;
     width: 100%;
     height: 210px;
+    
+  }
+
+  .nav2 a {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   /*-------POPULAIRE-------*/
@@ -534,6 +535,8 @@ footer h1 {
     font-size: 16px;
 
   /*--------FOOTER---------*/
+
+
   footer {
     flex-direction: column;
   }
@@ -542,8 +545,4 @@ footer h1 {
     margin-bottom: -18px;
   }
 
-  #assistance {
-    margin-left: 4em;
-    margin-top: -2em;
-  }
-}
+
