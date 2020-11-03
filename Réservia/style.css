@@ -1,33 +1,10 @@
-/*--------------MEDIA  QUERIES--------------------------*/
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width: 400px) and (max-width: 768px) {
-  /*-------HEBERGEMENT------*/
-
-  #gros {
-    flex-direction: column-reverse;
-  }
-
-  /*-------POPULAIRE-------*/
-
-  /*-----ACTIVITE------*/
-  #activite {
-    flex-direction: column;
-  }
-
-  /*--------FOOTER---------*/
-  footer {
-    flex-direction: column;
-  }
-
- 
-}
-
 /*-------------------------------------------HEADER-------------------------------*/
 header {
   margin: 2em;
 }
 
 /*----------Barre de recherche-------------*/
+
 .navbarlogo {
   position: absolute;
   left: 0;
@@ -80,6 +57,9 @@ input[type="text"] {
   padding-top: 16px;
   margin-top: -20px;
 }
+.nav1 {
+  padding-left: 113em;
+}
 /*------------------NAV AVEC ROND---------------------------*/
 
 nav li {
@@ -130,14 +110,17 @@ i {
   left: 0;
   margin: 2em;
   font-size: 12px;
+  font-weight: bold;
+  margin-top: 14px;
+  margin-left: 48px;
 }
 
 /*-------------------------------------*/
 nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
   font-weight: lighter;
+  flex-flow: wrap;
 }
 
 .act {
@@ -163,6 +146,7 @@ h2 a {
   padding: 6px;
   margin-left: 0.6em;
   text-decoration: none;
+  padding-bottom: 14px;
 }
 
 header p {
@@ -186,13 +170,14 @@ header h2 {
 
 body {
   margin: 2em;
+  overflow-x: hidden;
 }
 
 #gros {
   display: flex;
 }
 
-figcaption {
+p {
   font-weight: bold;
   font-size: 12px;
 }
@@ -232,7 +217,7 @@ figcaption {
   width: 274px;
   height: 180px;
   max-height: 50%;
-  padding: 5px;
+  padding: 0px;
   margin-inline-start: 10px;
   margin-inline-end: 10px;
   margin-block-start: 1em;
@@ -255,6 +240,7 @@ figcaption {
 
 figure p {
   font-size: 12px;
+  margin-top: 6px;
 }
 
 /*----------------------------------------POPULAIRES---------------------------------*/
@@ -327,7 +313,7 @@ figure p {
   margin-bottom: -11px;
 }
 
-#act figcaption {
+#act p {
   font-size: 12px;
   font-weight: bold;
   padding: 1em;
@@ -408,12 +394,12 @@ div p {
 
 footer p {
   font-size: 12px;
+  font-weight: lighter;
 }
 
 footer h1 {
   font-size: 13px;
 }
-
 
 /*--------------------css des étoiles *--------------------------------------------*/
 .rating {
@@ -460,23 +446,54 @@ footer h1 {
 }
 
 /*--------------MEDIA  QUERIES--------------------------*/
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width: 400px) and (max-width: 1024px) {
+
+@media all and (min-width: 250px) and (max-width: 1000px) {
+  @-ms-viewport {
+    width: device-width;
+  }
   /*--------HEADER---------*/
 
-  .nav2 a {
-    border-radius: 19px;
-    border: solid;
-    border-left: 0px;
-    padding: 8px;
-    border-width: 2px;
-    margin-top: 5px;
-    margin-left: 8px;
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .nav1 {
+    padding-left: 0;
+  }
+
+  .nav2 {
+    margin-top: 10px;
+  }
+
+  .bande {
+    padding-top: 65px;
+    border-top: none;
+    border-bottom: solid;
+    padding-left: -10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: -59px;
+    border-color: #0566fc;
+  }
+
+  .navinsc {
+    margin-top: -95px;
+    padding-left: 236px;
+  }
+
+  .navact {
+    padding-top: 46px;
+    border-bottom: solid;
+    padding-right: 43px;
+    padding-left: 40px;
+    margin-left: 0;
     border-color: #f2f2f2;
-    padding-left: 38px;
-    border-width: 1px;
-    font-size: 12px;
-    padding-right: 14px;
+  }
+
+  .filtre {
+    margin-left: 21px;
   }
 
   /*-------HEBERGEMENT------*/
@@ -490,16 +507,20 @@ footer h1 {
     width: 100%;
   }
 
-  #hebergement img{
-    
+  #hebergement img {
     width: 100%;
     object-fit: cover;
   }
+
+  #firstblock {
+    width: 87%;
+    margin-left: -27px;
+  }
+
   #firstblock figure {
     box-shadow: 5px 5px 5px #f2f2f2;
     width: 100%;
     height: 210px;
-    
   }
 
   .nav2 a {
@@ -508,19 +529,31 @@ footer h1 {
   }
 
   /*-------POPULAIRE-------*/
+
   #populaire {
     width: 100%;
-
     border-radius: 0;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
+
+  #populaire figure {
+    width: 82%;
+    margin-left: 27px;
+  }
+
+  #populaire img {
+    width: 107px;
+  }
+
   /*-----ACTIVITE------*/
   #activite {
     flex-direction: column;
+    width: 87%;
   }
 
   #activite figure {
-    width: 85%;
+    width: 100%;
     height: 250px;
   }
 
@@ -531,11 +564,11 @@ footer h1 {
     object-fit: cover;
   }
 
-  #act figcaption {
+  #act p {
     font-size: 16px;
+  }
 
   /*--------FOOTER---------*/
-
 
   footer {
     flex-direction: column;
@@ -545,4 +578,11 @@ footer h1 {
     margin-bottom: -18px;
   }
 
+  #assistance {
+    margin-top: -21px;
+  }
 
+  .filtre li {
+    margin-left: 5px;
+  }
+}
