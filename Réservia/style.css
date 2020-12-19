@@ -58,7 +58,7 @@ input[type="text"] {
   margin-top: -20px;
 }
 .nav1 {
-  padding-left: 113em;
+  float: right;
 }
 /*------------------NAV AVEC ROND---------------------------*/
 
@@ -112,7 +112,7 @@ i {
   font-size: 12px;
   font-weight: bold;
   margin-top: 14px;
-  margin-left: 48px;
+  margin-left: 34px;
 }
 
 /*-------------------------------------*/
@@ -154,7 +154,7 @@ header p {
 }
 
 header h2 {
-  padding-top: 34px;
+  padding-top: 78px;
   font-weight: bold;
   margin-left: -7px;
   padding-bottom: 1px;
@@ -214,7 +214,7 @@ p {
 #firstblock figure {
   background-color: white;
   border-radius: 10px;
-  width: 274px;
+  width: 232px;
   height: 180px;
   max-height: 50%;
   padding: 0px;
@@ -299,14 +299,13 @@ figure p {
 
 /*--------------------------------ACTIVITES---------------------------------------------------------*/
 #act {
-  width: 90vw;
   margin: 1em;
 }
 
 #activite {
   display: flex;
-  margin: -3em;
   margin-top: 1em;
+  flex-flow: wrap;
 }
 
 #act h2 {
@@ -323,13 +322,15 @@ figure p {
 .vp {
   background-color: white;
   border-radius: 10px;
-  width: 340px;
+  width: 300px;
   box-shadow: 5px 5px 5px #f2f2f2;
   height: 473px;
+  margin-left: 14px;
+  margin-right: -6px;
 }
 
 .vp img {
-  width: 340px;
+  width: 300px;
   height: 425px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -446,8 +447,111 @@ footer h1 {
 }
 
 /*--------------MEDIA  QUERIES--------------------------*/
+@media (min-width: 250px) and (max-width: 400px) {
+  #gros {
+    flex-direction: column-reverse;
+  }
 
-@media all and (min-width: 250px) and (max-width: 1000px) {
+  header img {
+    margin-left: 81px;
+  }
+  .bande {
+    padding-top: 16px;
+    margin-top: -20px;
+    border-top: none;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    font-weight: lighter;
+    flex-flow: wrap;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  div p {
+    line-height: 14px;
+  }
+  #hebergement {
+    background-color: white;
+    width: 100%;
+  }
+
+  #hebergement img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #firstblock {
+    width: 87%;
+    margin-left: -27px;
+  }
+
+  #firstblock figure {
+    box-shadow: 5px 5px 5px #f2f2f2;
+    width: 196px;
+    height: 200px;
+    margin-left: 0px;
+  }
+
+  .nav2 a {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*-------POPULAIRE-------*/
+
+  #populaire {
+    width: 400px;
+    border-radius: 0;
+    margin-left: -19px;
+  }
+
+  #populaire figure {
+    width: 280px;
+    height: 170px;
+    margin-left: 4px;
+  }
+
+  #populaire img {
+    width: 107px;
+  }
+
+  /*-----ACTIVITE------*/
+  #activite {
+    flex-direction: column;
+    width: 87%;
+  }
+
+  #activite figure {
+    width: 196px;
+    height: 250px;
+    margin-left: 0px;
+  }
+
+  #activite img {
+    width: 196px;
+    height: 165px;
+    object-fit: cover;
+  }
+
+  #act p {
+    font-size: 12px;
+  }
+
+  .if {
+    margin-bottom: 10px;
+  }
+
+  .fp {
+    margin-bottom: 10px;
+  }
+
+  footer div {
+    padding-right: 0px;
+  }
+}
+
+@media all and (min-width: 400px) and (max-width: 800px) {
   @-ms-viewport {
     width: device-width;
   }
@@ -519,8 +623,9 @@ footer h1 {
 
   #firstblock figure {
     box-shadow: 5px 5px 5px #f2f2f2;
-    width: 100%;
+    width: 350px;
     height: 210px;
+    margin-left: 45px;
   }
 
   .nav2 a {
@@ -538,7 +643,7 @@ footer h1 {
   }
 
   #populaire figure {
-    width: 82%;
+    width: 400px;
     margin-left: 27px;
   }
 
@@ -553,8 +658,9 @@ footer h1 {
   }
 
   #activite figure {
-    width: 100%;
+    width: 350px;
     height: 250px;
+    margin-left: 30px;
   }
 
   #activite img {
@@ -565,7 +671,15 @@ footer h1 {
   }
 
   #act p {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .if {
+    margin-bottom: 10px;
+  }
+
+  .fp {
+    margin-bottom: 10px;
   }
 
   /*--------FOOTER---------*/
