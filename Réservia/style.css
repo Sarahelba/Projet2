@@ -1,3 +1,11 @@
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+body {
+  overflow-x: hidden;
+}
 /*-------------------------------------------HEADER-------------------------------*/
 header {
   margin: 2em;
@@ -65,7 +73,6 @@ input[type="text"] {
 nav li {
   list-style-type: none;
   display: flex;
-  margin-left: 10px;
 }
 
 .icone {
@@ -106,13 +113,13 @@ i {
 }
 
 .filtre {
-  position: absolute;
-  left: 0;
-  margin: 2em;
+  /* position: absolute; */
+  /* left: 0; */
+  /* margin: 2em; */
   font-size: 12px;
   font-weight: bold;
   margin-top: 14px;
-  margin-left: 34px;
+  /* margin-left: 34px; */
 }
 
 /*-------------------------------------*/
@@ -162,11 +169,6 @@ header h2 {
 }
 
 /*-------------------------------------------------------------------------------*/
-* {
-  font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
-  font-size: 10px;
-}
 
 body {
   margin: 2em;
@@ -446,257 +448,105 @@ footer h1 {
   background-color: #f2f2f2;
 }
 
-/*--------------MEDIA  QUERIES--------------------------*/
-@media (min-width: 250px) and (max-width: 400px) {
-  #gros {
-    flex-direction: column-reverse;
-  }
-
-  header img {
-    margin-left: 81px;
-  }
+@media (min-width: 321px) and (max-width: 799px) {
+  /*style smartphones et petites tablettes en portrait*/
+  /*Barre de navigation du haut*/
   .bande {
-    padding-top: 16px;
-    margin-top: -20px;
-    border-top: none;
-  }
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    font-weight: lighter;
-    flex-flow: wrap;
-    margin-top: 40px;
-    flex-direction: column;
-  }
-  div p {
-    line-height: 14px;
-  }
-  #hebergement {
-    background-color: white;
-    width: 100%;
-  }
-
-  #hebergement img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  #firstblock {
-    width: 87%;
-    margin-left: -27px;
-  }
-
-  #firstblock figure {
-    box-shadow: 5px 5px 5px #f2f2f2;
-    width: 196px;
-    height: 200px;
-    margin-left: 0px;
-  }
-
-  .nav2 a {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  /*-------POPULAIRE-------*/
-
-  #populaire {
-    width: 400px;
-    border-radius: 0;
-    margin-left: -19px;
-  }
-
-  #populaire figure {
-    width: 280px;
-    height: 170px;
-    margin-left: 4px;
-  }
-
-  #populaire img {
-    width: 107px;
-  }
-
-  /*-----ACTIVITE------*/
-  #activite {
-    flex-direction: column;
-    width: 87%;
-  }
-
-  #activite figure {
-    width: 196px;
-    height: 250px;
-    margin-left: 0px;
-  }
-
-  #activite img {
-    width: 196px;
-    height: 165px;
-    object-fit: cover;
-  }
-
-  #act p {
-    font-size: 12px;
-  }
-
-  .if {
-    margin-bottom: 10px;
-  }
-
-  .fp {
-    margin-bottom: 10px;
-  }
-
-  footer div {
-    padding-right: 0px;
-  }
-}
-
-@media all and (min-width: 400px) and (max-width: 800px) {
-  @-ms-viewport {
-    width: device-width;
-  }
-  /*--------HEADER---------*/
-
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  .nav1 {
-    padding-left: 0;
-  }
-
-  .nav2 {
-    margin-top: 10px;
-  }
-
-  .bande {
-    padding-top: 65px;
-    border-top: none;
-    border-bottom: solid;
-    padding-left: -10px;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-left: -59px;
-    border-color: #0566fc;
-  }
-
-  .navinsc {
-    margin-top: -95px;
-    padding-left: 236px;
+    border: none;
+    width: 50%;
+    border-bottom: solid blue;
   }
 
   .navact {
-    padding-top: 46px;
-    border-bottom: solid;
-    padding-right: 43px;
-    padding-left: 40px;
-    margin-left: 0;
-    border-color: #f2f2f2;
+    width: 50%;
+    border-bottom: solid #f2f2f2;
   }
 
+  .navinsc {
+    font-weight: bold;
+  }
+  .nav1 ul {
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+  }
+
+  header img {
+    width: 9em;
+  }
+  /*-----------------------------------*/
+  header h2 {
+    font-size: 15px;
+    padding-left: 6px;
+  }
+
+  .un p {
+    font-weight: lighter;
+  }
   .filtre {
-    margin-left: 21px;
+    margin-left: -36px;
   }
 
-  /*-------HEBERGEMENT------*/
-
+  /*-------Gros bloc-----*/
   #gros {
     flex-direction: column-reverse;
   }
-
-  #hebergement {
-    background-color: white;
-    width: 100%;
-  }
-
-  #hebergement img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  #firstblock {
-    width: 87%;
-    margin-left: -27px;
-  }
-
-  #firstblock figure {
-    box-shadow: 5px 5px 5px #f2f2f2;
-    width: 350px;
-    height: 210px;
-    margin-left: 45px;
-  }
-
-  .nav2 a {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  /*-------POPULAIRE-------*/
-
   #populaire {
-    width: 100%;
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
+    width: 700px;
+    margin: -20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   #populaire figure {
-    width: 400px;
-    margin-left: 27px;
+    margin-left: 60px;
+    width: 47%;
+    word-wrap: break-word;
+    box-shadow: 2px 8px 10px 1px #c1c1c1;
+  }
+  figure p {
+    font-size: 10px;
   }
 
-  #populaire img {
-    width: 107px;
+  #hebergement {
+    width: 100%;
+    margin: 0;
+    background-color: white;
   }
 
-  /*-----ACTIVITE------*/
-  #activite {
-    flex-direction: column;
-    width: 87%;
+  #hebergement figure {
+    box-shadow: 2px 8px 10px 1px #c1c1c1;
   }
+  /*------Deuxième bloc------*/
+  #firstblock figure {
+    width: 100%;
+  }
+
+  /*--------Bloc activité------*/
 
   #activite figure {
-    width: 350px;
-    height: 250px;
+    width: 300px;
     margin-left: 30px;
+    height: 150px;
+    margin-top: 42px;
+    box-shadow: 2px 8px 10px 1px #c1c1c1;
   }
 
-  #activite img {
-    width: 100%;
-    height: 165px;
-
-    object-fit: cover;
+  #activite figure img {
+    width: 300px;
+    height: 150px;
   }
 
-  #act p {
-    font-size: 14px;
-  }
-
-  .if {
-    margin-bottom: 10px;
-  }
-
-  .fp {
-    margin-bottom: 10px;
-  }
-
-  /*--------FOOTER---------*/
-
+  /*-----Footer-----*/
   footer {
+    display: flex;
     flex-direction: column;
   }
-
-  #propos {
-    margin-bottom: -18px;
+  footer p {
+    line-height: 0px;
   }
 
-  #assistance {
-    margin-top: -21px;
-  }
-
-  .filtre li {
-    margin-left: 5px;
+  footer div {
+    margin: 20px;
   }
 }
