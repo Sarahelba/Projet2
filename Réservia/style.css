@@ -449,7 +449,7 @@ footer h1 {
 @media (min-width: 321px) and (max-width: 799px) {
   /*style smartphones et petites tablettes en portrait*/
   /*Barre de navigation du haut*/
-  body {
+  html {
     overflow-x: hidden;
   }
   .bande {
@@ -501,8 +501,9 @@ footer h1 {
   }
 
   #populaire figure {
-    margin-left: 60px;
-    width: 47%;
+    width: 320px;
+    margin-left: 27px;
+
     word-wrap: break-word;
     box-shadow: 2px 8px 10px 1px #c1c1c1;
   }
@@ -529,7 +530,7 @@ footer h1 {
   .vp {
     width: 300px;
     height: 150px;
-    margin-left: 38px;
+    margin-left: 10px;
     margin-bottom: 30px;
   }
 
@@ -541,7 +542,7 @@ footer h1 {
   .fp {
     width: 300px;
     height: 150px;
-    margin-left: 38px;
+    margin-left: 10px;
     margin-bottom: 30px;
   }
 
@@ -553,7 +554,7 @@ footer h1 {
   .if {
     width: 300px;
     height: 150px;
-    margin-left: 38px;
+    margin-left: 10px;
     margin-bottom: 30px;
   }
 
@@ -572,5 +573,6 @@ footer h1 {
 
   footer div {
     margin: 20px;
+    padding-right: 0;
   }
 }
