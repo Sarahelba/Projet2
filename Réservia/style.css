@@ -3,9 +3,7 @@
   box-sizing: border-box;
   font-size: 10px;
 }
-body {
-  overflow-x: hidden;
-}
+
 /*-------------------------------------------HEADER-------------------------------*/
 header {
   margin: 2em;
@@ -451,6 +449,9 @@ footer h1 {
 @media (min-width: 321px) and (max-width: 799px) {
   /*style smartphones et petites tablettes en portrait*/
   /*Barre de navigation du haut*/
+  body {
+    overflow-x: hidden;
+  }
   .bande {
     border: none;
     width: 50%;
@@ -477,6 +478,7 @@ footer h1 {
   header h2 {
     font-size: 15px;
     padding-left: 6px;
+    padding-top: 150px;
   }
 
   .un p {
@@ -519,24 +521,46 @@ footer h1 {
   }
   /*------Deuxième bloc------*/
   #firstblock figure {
-    width: 100%;
+    width: 350px;
   }
 
   /*--------Bloc activité------*/
 
-  #activite figure {
-    width: 300px;
-    margin-left: 30px;
-    height: 150px;
-    margin-top: 42px;
-    box-shadow: 2px 8px 10px 1px #c1c1c1;
-  }
-
-  #activite figure img {
+  .vp {
     width: 300px;
     height: 150px;
+    margin-left: 38px;
+    margin-bottom: 30px;
   }
 
+  .vp img {
+    width: 300px;
+    height: 100px;
+  }
+
+  .fp {
+    width: 300px;
+    height: 150px;
+    margin-left: 38px;
+    margin-bottom: 30px;
+  }
+
+  .fp img {
+    width: 300px;
+    height: 100px;
+  }
+
+  .if {
+    width: 300px;
+    height: 150px;
+    margin-left: 38px;
+    margin-bottom: 30px;
+  }
+
+  .if img {
+    width: 300px;
+    height: 100px;
+  }
   /*-----Footer-----*/
   footer {
     display: flex;
