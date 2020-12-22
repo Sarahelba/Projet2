@@ -489,12 +489,13 @@ footer h1 {
   /*-----------------------------------*/
   header h2 {
     font-size: 15px;
-    padding-left: 6px;
+    padding-left: 18px;
     padding-top: 150px;
   }
 
   .un p {
     font-weight: lighter;
+    padding-left: 11px;
   }
   .filtre {
     margin-left: -36px;
