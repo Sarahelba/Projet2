@@ -573,28 +573,3 @@ footer h1 {
     padding-right: 0;
   }
 }
-
-@media (min-width: 1024px) {
-  #hebergement {
-    width: 94%;
-  }
-
-  #populaire {
-    width: 94%;
-  }
-  footer div {
-    padding-right: 0;
-  }
-
-  .little {
-    padding-left: 90px;
-  }
-  #activite {
-    padding-left: 111px;
-    margin-top: 44px;
-  }
-  #gros {
-    display: flex;
-    flex-direction: column;
-  }
-}
