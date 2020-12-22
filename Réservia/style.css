@@ -531,6 +531,9 @@ footer h1 {
     box-shadow: 2px 8px 10px 1px #c1c1c1;
   }
   /*------Deuxième bloc------*/
+  #firstblock {
+    justify-content: center;
+  }
   #firstblock figure {
     width: 350px;
   }
@@ -538,7 +541,9 @@ footer h1 {
   #activite {
     justify-content: center;
   }
-
+  #secondblock {
+    justify-content: center;
+  }
   /*--------Bloc activité------*/
 
   .vp {
