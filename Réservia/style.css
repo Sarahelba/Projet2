@@ -8,7 +8,16 @@
 header {
   margin: 2em;
 }
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
 
+a:hover {
+  color: blue;
+}
 /*----------Barre de recherche-------------*/
 
 .navbarlogo {
@@ -212,7 +221,7 @@ p {
 #firstblock figure {
   background-color: white;
   border-radius: 10px;
-  width: 232px;
+  width: 230px;
   height: 180px;
   max-height: 50%;
   padding: 0px;
@@ -267,7 +276,7 @@ figure p {
 #populaire figure {
   background-color: white;
   border-radius: 10px;
-  width: 85%;
+  width: 362px;
   height: 120px;
   padding: 5px;
   display: flex;
@@ -318,7 +327,7 @@ figure p {
 .vp {
   background-color: white;
   border-radius: 10px;
-  width: 300px;
+  width: 294px;
   box-shadow: 5px 5px 5px #f2f2f2;
   height: 473px;
   margin-left: 14px;
