@@ -11,10 +11,11 @@ header {
 a {
   text-decoration: none;
 }
+/*
 a:visited {
   color: black;
 }
-
+*/
 a:hover {
   color: blue;
 }
@@ -600,6 +601,11 @@ footer h1 {
     flex-direction: column;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   footer p {
     line-height: 0px;
@@ -608,5 +614,21 @@ footer h1 {
   footer div {
     margin: 20px;
     padding-right: 0;
+  }
+}
+@media (min-width: 820px) and (max-width: 1366px) {
+  #populaire {
+    width: 50%;
+  }
+
+  #activite {
+    justify-content: center;
+  }
+
+  footer div {
+    margin: 11px;
+  }
+  #secondblock figure {
+    margin-left: 15px;
   }
 }
