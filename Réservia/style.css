@@ -151,7 +151,6 @@ nav a {
 
 header img {
   width: 10em;
-  margin-top: -36px;
 }
 
 h2 a {
@@ -409,9 +408,6 @@ footer h1 {
 }
 
 /*--------------------css des étoiles *--------------------------------------------*/
-.rating {
-  width: 214px;
-}
 
 .fa-star {
   color: gray;
@@ -459,18 +455,31 @@ footer h1 {
     margin: 0;
   }
   header img {
+    width: 10em;
     margin-top: 0;
+    position: relative;
+    top: 44px;
+    left: 14px;
   }
 
   header {
     margin: 0;
   }
+
+  #info {
+    text-align: center;
+  }
+
   ul {
     width: 100%;
     padding: 0;
   }
   .nav1 {
     width: 100%;
+  }
+
+  .nav2 {
+    margin-left: 50px;
   }
   .bande {
     border: none;
@@ -495,6 +504,10 @@ footer h1 {
 
   header img {
     width: 9em;
+  }
+
+  form {
+    justify-content: center;
   }
   /*-----------------------------------*/
   header h2 {
@@ -522,12 +535,17 @@ footer h1 {
   }
 
   #populaire figure {
-    width: 320px;
+    width: 90%;
     margin-left: 27px;
 
     word-wrap: break-word;
     box-shadow: 2px 8px 10px 1px #c1c1c1;
   }
+
+  #populaire a {
+    width: 100%;
+  }
+
   figure p {
     font-size: 10px;
   }
@@ -616,9 +634,14 @@ footer h1 {
     padding-right: 0;
   }
 }
+
 @media (min-width: 820px) and (max-width: 1366px) {
   #populaire {
     width: 50%;
+  }
+
+  #populaire a {
+    width: 100%;
   }
 
   #activite {
